@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willow - Webflow HTML website template</title>
+    <link rel="shortcut icon" href="../img/6168f4fca9fb28170e2254d2_Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <header class="absolute w-full z-10">
+        <div class="container relative">
+            <div>
+                <nav class="flex justify-between py-6 w-full">
+                    <div class="flex flex-row items-center">
+                        <img src="../img/6168f4fca9fb28170e2254d2_Logo.svg" alt="">
+                        <h4 class="text-2xl ml-4 text-logocolor font-bold">Willow</h4>
+                        <div class="w-px h-4 bg-gray-200 mx-3"></div>
+                        <p class="text-base text-lightGray hidden md:block">hello@willow.co</p>
+                    </div>
+
+                    <div class="mr-17 lg:static absolute mt-20 lg:mt-0 bg-white lg:bg-transparent w-full lg:w-auto "
+                        id="navMenu">
+                        <ul class="lg:flex items-center">
+                            <li class="my-2 lg:my-0"><a
+                                    class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                    href="#">Home</a></li>
+                            <li class="lg:ml-4 mt-5 my-3 lg:my-0"><a
+                                    class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                    href="#">Company</a></li>
+                            <li class="relative inline-block lg:ml-4  lg:my-0">
+                                <div class="flex justify-between hover:border-gray-300 border-transparent border p-3 lg:px-6 cursor-pointer w-80vw"
+                                    id="dropdownService">
+                                    <a class="text-linkCOlor font-normal text-sm">Service</a>
+                                    <img src="../img/drop-down.svg" class="w-4 lg:ml-1">
+                                </div>
+
+                                <div class="absolute mt-0 lg:mt-5 w-44 w-80vw bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                    role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
+                                    id="menuDropdown">
+                                    <div class="py-1" role="none">
+                                        <a href="#"
+                                            class="font-normal text-gray-700 block px-4 py-3 text-sm hover:bg-gray-100">Service
+                                            Overview</a>
+                                        <a href="#"
+                                            class="font-normal text-gray-700 block px-4 py-3 text-sm hover:bg-gray-100">Design</a>
+                                        <a href="#"
+                                            class="font-normal text-gray-700 block px-4 py-3 text-sm hover:bg-gray-100">Development</a>
+                                        <a href="#"
+                                            class="font-normal text-gray-700 block px-4 py-3 text-sm hover:bg-gray-100">Branding</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="lg:ml-4 my-2 lg:my-0"><a
+                                    class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                    href="#">Works</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:hidden p-3 hamMenu">
+                        <img src="../img/hamMenu.svg" id="hamMenu">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+        <div class="container z-0">
+            <div class="wrapper md:px-20 lg:px-0">
+                <div class="grid lg:grid-cols-12 grid-rows-1">
+                    <div class="col-span-6 mt-40">
+                        <h4 class="text-lightGray mb-6 text-lg font-medium">WELCOME TO WILLOW</h4>
+                        <h1 class="text-h1Color mb-6 text-5xl md:text-7xl font-bold">Elevate your brand with Willow</h1>
+                        <p class="text-h1Color mb-6 text-lg">Unlimited design subscriptions to your business.</p>
+                        <button
+                            class="px-5 py-2 bg-btnColor hover:bg-btnHover transition-500 text-white flex items-center">Get
+                            Started <span><img src="../img/6168f4fca9fb28083b225506_Arrow Project.svg"
+                                    class="ml-5 w-8"></span>
+                        </button>
+                        <p class="text-lightGray lg:mt-32 mt-10">Design you'll 💛 guaranted</p>
+                    </div>
+                    <div class="col-span-6 relative mt-10 lg:mt-0">
+                        <div class="flex justify-end bg-midGray h-102 items-end">
+                            <img src="../img/6168f4fca9fb28d9e92254ec_Hero Person.png" class="object-contain w-11/12"
+                                alt="">
+                        </div>
+
+                        <div class="w-44 h-72 bg-btnColor absolute top-0 right-15 hidden lg:block">
+                            <img src="../img/6168f4fca9fb2883d82254dd_Hero CTA Star.svg" class="ml-auto" alt="">
+                            <h4 class="text-white text-xl mx-5 mt-20">Start growing with Willow.</h4>
+                            <h5 class="text-white text-base mx-5 mt-5 flex cursor-pointer">Learn
+                                More <span><img src="../img/6168f4fca9fb28083b225506_Arrow Project.svg"
+                                        class="ml-1"></span>
+                            </h5>
+                        </div>
+
+                        <div
+                            class="w-72 h-32  bg-white z-10 flex justify-evenly absolute bottom-14 md:-ml-20 ml-4  card__sun">
+                            <div class="mx-0 my-auto">
+                                <img src="../img/6168f4fca9fb28b5922254dc_Hero UI Card Star.svg" alt="">
+                            </div>
+                            <div class="mx-0 my-auto">
+                                <p class="text-3xl font-bold text-h1Color">+480</p>
+                                <p class="text-logocolor font-light">Happy Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section>
+        <div class="container">
+            <div class="flex flex-col md:flex-row justify-between items-center my-20 flex-wrap">
+                <img src="../img/6168f4fca9fb28e9432254e2_Logo 1.svg">
+                <img src="../img/6168f4fca9fb2801c82254e3_Logo 2.svg">
+                <img src="../img/6168f4fca9fb280a902254e1_Logo 3.svg">
+                <img src="../img/6168f4fca9fb2867502254e4_Logo 4.svg">
+                <img src="../img/6168f4fca9fb284a8c2254df_Logo 5.svg">
+                <img src="../img/6168f4fca9fb28e7292254e0_Logo 6.svg">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reveal">
+        <div class="container relative">
+            <div class="wrapper">
+                <div class="heading__two__width relative">
+                    <h2 class="text-h1Color mb-6 text-5xl font-medium z-10">We create world-class development and
+                        branding</h2>
+                    <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg"
+                        class="absolute top-0 -translate-x-14 -translate-y-10 -z-10">
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-20 mt-16 justify-center">
+
+                    <div
+                        class="relative overflow-hidden p-10 max-w-md border border-solid border-gray-300 hover:bg-linkCOlor cursor-pointer transition-300 card__branding">
+                        <img src="../img/6168f4fca9fb2832b82254d6_Icon Branding.svg" alt="">
+                        <h3 class="text-2xl font-bold text-h1Color mt-7 mb-5 card__heading">Branding</h3>
+                        <p class="text-logocolor font-light card__description">A brand today is all about how it makes
+                            your customer feel.</p>
+                        <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                            Learn More <span><svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </h5>
+                        <img src="../img/6168f4fca9fb2809b72254db_Service Star.svg" class="absolute star__half" alt="">
+                    </div>
+
+                    <div
+                        class="relative overflow-hidden p-10 max-w-md border border-solid border-gray-300 hover:bg-linkCOlor cursor-pointer transition-300 card__branding">
+                        <img src="../img/6168f4fca9fb284c422254d7_Icon Development.svg" alt="">
+                        <h3 class="text-2xl font-bold text-h1Color mt-7 mb-5 card__heading">Development</h3>
+                        <p class="text-logocolor font-light card__description">A brand today is all about how it makes
+                            your customer feel.</p>
+                        <h5
+                            class="text-base mx-5text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                            Learn More <span><svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </h5>
+                        <img src="../img/6168f4fca9fb2809b72254db_Service Star.svg" class="absolute star__half" alt="">
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-20 md:mt-16 mt-6 justify-center">
+
+                    <div
+                        class="relative overflow-hidden p-10 max-w-md border border-solid border-gray-300 hover:bg-linkCOlor cursor-pointer transition-300 card__branding">
+                        <img src="../img/6168f4fca9fb2873872254d8_Icon Animation.svg" alt="">
+                        <h3 class="text-2xl font-bold text-h1Color mt-7 mb-5 card__heading">Animation</h3>
+                        <p class="text-logocolor font-light card__description">A brand today is all about how it makes
+                            your customer feel.</p>
+                        <h5
+                            class="text-base mx-5text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                            Learn More <span><svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </h5>
+                        <img src="../img/6168f4fca9fb2809b72254db_Service Star.svg" class="absolute star__half" alt="">
+                    </div>
+
+                    <div
+                        class="relative overflow-hidden p-10 max-w-md border border-solid border-gray-300 hover:bg-linkCOlor cursor-pointer transition-300 card__branding">
+                        <img src="../img/6168f4fca9fb284b722254d9_Icon UX.svg" alt="">
+                        <h3 class="text-2xl font-bold text-h1Color mt-7 mb-5 card__heading">User Experience</h3>
+                        <p class="text-logocolor font-light card__description">A brand today is all about how it makes
+                            your customer feel.</p>
+                        <h5
+                            class="text-base mx-5text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                            Learn More <span><svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </h5>
+                        <img src="../img/6168f4fca9fb2809b72254db_Service Star.svg" class="absolute star__half" alt="">
+                    </div>
+                </div>
+            </div>
+            <img src="../img/6168f4fca9fb28c05a2254de_Squiggle.svg" class="absolute top-0 right-0 hidden lg:block">
+        </div>
+    </section>
+
+
+    <section class="reveal">
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-small">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mt-40 md:mt-52">
+                        <div class="max-w-lg relative">
+                            <h2 class="text-h1Color mb-6 text-5xl font-medium z-10">Check out some great case studies
+                            </h2>
+                            <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg"
+                                class="absolute top-0 -translate-x-14 -translate-y-10 -z-10">
+                        </div>
+                        <div>
+                            <button
+                                class="px-3 py-1 border border-solid border-gray-800 hover:bg-btnHover2 hover:border-white transition-500 text-linkCOlor flex items-center">Featured
+                                Project<span><img src="../img/6168f4fca9fb2818ca2254ee_Arrow Right.svg" class="ml-3
+                                    w-8"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between mt-10 gap-10">
+                    <div class="card--project cursor-pointer relative overflow-hidden">
+                        <img src="../img/6168f4fca9fb28613022554a_Project Psalms.png" class="card__img">
+                        <div class="overlay p-12">
+                            <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg" class="w-12 card__star__img">
+                            <h3 class="text-4xl font-semibold text-white mt-96 mb-5 card__heading ">PS-Alms</h3>
+                            <p class="text-white font-light card__description">Capturing workplace productivity in a
+                                series of candid photoshoots.</p>
+                            <h5
+                                class="text-base text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                                Learn More <span><img src="../img/arrow-right.svg" class="ml-2">
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="card--project cursor-pointer relative overflow-hidden">
+                        <img src="../img/6168f4fca9fb288021225549_Project Almosty.png" class="card__img">
+                        <div class="overlay p-12">
+                            <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg" class="w-12 card__star__img">
+                            <h3 class="text-4xl font-semibold text-white mt-96 mb-5 card__heading ">Almosty</h3>
+                            <p class="text-white font-light card__description">Capturing workplace productivity in a
+                                series of candid photoshoots.</p>
+                            <h5
+                                class="text-base text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                                Learn More <span><img src="../img/arrow-right.svg" class="ml-2">
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between mt-10 gap-10">
+                    <div class="card--project cursor-pointer relative overflow-hidden">
+                        <img src="../img/6168f4fca9fb28f2b022554b_Project Skin Care.png" class="card__img">
+                        <div class="overlay p-12">
+                            <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg" class="w-12 card__star__img">
+                            <h3 class="text-4xl font-semibold text-white mt-96 mb-5 card__heading ">Skin Care</h3>
+                            <p class="text-white font-light card__description">Capturing workplace productivity in a
+                                series of candid photoshoots.</p>
+                            <h5
+                                class="text-base text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                                Learn More <span><img src="../img/arrow-right.svg" class="ml-2">
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="card--project cursor-pointer relative overflow-hidden">
+                        <img src="../img/6168f4fca9fb285f9b225546_Project Neuthy.png" class="card__img">
+                        <div class="overlay p-12">
+                            <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg" class="w-12 card__star__img">
+                            <h3 class="text-4xl font-semibold text-white mt-96 mb-5 card__heading ">Neauthy Skin Care
+                            </h3>
+                            <p class="text-white font-light card__description">Capturing workplace productivity in a
+                                series of candid photoshoots.</p>
+                            <h5
+                                class="text-base text-white textxl mt-5 flex items-center cursor-pointer card__heading2">
+                                Learn More <span><img src="../img/arrow-right.svg" class="ml-2">
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="reveal">
+        <div class="container relative">
+            <div class="wrapper-xs">
+                <div class="flex justify-center flex-col">
+                    <div class=" relative mt-40 md:mt-52 border-b border-b-gray-300">
+                        <h2 class="text-h1Color mb-6 text-5xl font-medium z-10 max-w-lg">We offer a wide
+                            variety of skills.
+                        </h2>
+                        <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg"
+                            class="absolute top-0 -translate-x-14 -translate-y-10 -z-10">
+                    </div>
+
+                    <div class=" border-b border-b-gray-300 pb-7">
+                        <h3 class="text-3xl font-medium text-h1Color mt-7">01 - Research</h3>
+                        <p class="font-light text-lightGray">A brand today is all about how it makes customers feel.</p>
+                    </div>
+
+                    <div class=" border-b border-b-gray-300 pb-7">
+                        <h3 class="text-3xl font-medium text-h1Color mt-7">02 - Concept</h3>
+                        <p class="font-light text-lightGray">A brand today is all about how it makes customers feel.</p>
+                    </div>
+
+                    <div class=" border-b border-b-gray-300 pb-7">
+                        <h3 class="text-3xl font-medium text-h1Color mt-7">03 - Development</h3>
+                        <p class="font-light text-lightGray">A brand today is all about how it makes customers feel.</p>
+                    </div>
+
+                    <div class=" border-b border-b-gray-300 pb-7">
+                        <h3 class="text-3xl font-medium text-h1Color mt-7">04 - leftGrowth</h3>
+                        <p class="font-light text-lightGray">A brand today is all about how it makes customers feel.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/6168f4fca9fb28c05a2254de_Squiggle.svg"
+                class="absolute top-0 lg:top-96 w-32 hidden md:block squiggle">
+        </div>
+    </section>
+
+
+    <section class="reveal">
+        <div class="">
+            <div class="text-center relative">
+                <h2 class="text-h1Color mt-52 text-5xl font-medium z-10">Our Awards</h2>
+                <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg"
+                    class="absolute top-0 translate-x-half -translate-y-20 -z-10">
+            </div>
+
+            <div class="flex justify-evenly mt-20 flex-wrap px-5">
+                <div class="border border-solid border-gray-300 p-6 lg:w-72 md:w-80">
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <img src="../img/61566b464a284f23d0b90f56_Icon Trophy.svg">
+                    </div>
+
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <h4 class="text-lightGray">CARTIER / 2021</h4>
+                        <h3 class="md:text-3xl text-2xl font-medium text-h1Color mt-3">Awwwards Site of the day</h3>
+                    </div>
+                    <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span><img src="../img/6168f4fca9fb2818ca2254ee_Arrow Right.svg"
+                                class="ml-2 arrow-right-black">
+                        </span>
+                    </h5>
+                </div>
+
+                <div class="border border-solid border-gray-300 p-6 lg:w-72 md:w-80 mt-10 md:mt-0">
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <img src="../img/61566b464a284f23d0b90f56_Icon Trophy.svg">
+                    </div>
+
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <h4 class="text-lightGray">CARTIER / 2021</h4>
+                        <h3 class="md:text-3xl text-2xl font-medium text-h1Color mt-3">Webflow Design of the Week</h3>
+                    </div>
+                    <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span><img src="../img/6168f4fca9fb2818ca2254ee_Arrow Right.svg"
+                                class="ml-2 arrow-right-black">
+                        </span>
+                    </h5>
+                </div>
+
+                <div class="border border-solid border-gray-300 p-6 lg:w-72 md:w-80 mt-10 lg:mt-0">
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <img src="../img/61566b464a284f23d0b90f56_Icon Trophy.svg">
+                    </div>
+
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <h4 class="text-lightGray">CARTIER / 2021</h4>
+                        <h3 class="md:text-3xl text-2xl font-medium text-h1Color mt-3">Awwwards Site of the day</h3>
+                    </div>
+                    <h5 class="text-base mtAwwwards Site of the day-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span><img src="../img/6168f4fca9fb2818ca2254ee_Arrow Right.svg"
+                                class="ml-2 arrow-right-black">
+                        </span>
+                    </h5>
+                </div>
+
+                <div class="border border-solid border-gray-300 p-6 lg:w-72 md:w-80 mt-10 lg:mt-0">
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <img src="../img/61566b464a284f23d0b90f56_Icon Trophy.svg">
+                    </div>
+
+                    <div class="border-b border-gray-300 my-8 pb-8">
+                        <h4 class="text-lightGray">CARTIER / 2021</h4>
+                        <h3 class="md:text-3xl text-2xl font-medium text-h1Color mt-3">Webflow Design of the Week</h3>
+                    </div>
+                    <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span><img src="../img/6168f4fca9fb2818ca2254ee_Arrow Right.svg"
+                                class="ml-2 arrow-right-black">
+                        </span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reveal">
+        <div class="container">
+            <div class="wrapper">
+                <div class="heading__two__width relative mt-40 md:mt-52">
+                    <h2 class="text-h1Color mb-6 text-5xl font-medium z-10">Quality is no
+                        accident.</h2>
+                    <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg"
+                        class="absolute top-0 -translate-x-14 -translate-y-10 -z-10">
+                </div>
+
+                <div class="mt-16">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="grid grid-rows-1 md:grid-cols-12">
+                                    <div class="col-span-6">
+                                        <img src="../img/6168f4fca9fb281eed225503_Testimonial Image.png" class="">
+                                    </div>
+                                    <div class="md:px-9 col-span-6 mt-4 md:mt-0">
+                                        <img src="../img/6168f4fca9fb2877ce225501_Quote Right.svg" alt="">
+                                        <h3 class="md:text-3xl text-2xl font-normal text-h1Color lg:my-10 my-4">Amet
+                                            minim mollit
+                                            non
+                                            deserunt est sit aliqua dolor do amet sint officia consequat duis enim
+                                            mollit exercitation.</h3>
+                                        <img src="../img/6168f4fca9fb2883b0225502_Quote Left.svg" alt="">
+                                        <h4 class="text-lg text-h1Color mt-6">Lee Morgan, Slack, Inc</h4>
+                                        <h5 class="text-lightGray">New York, NY Team</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid grid-rows-1 md:grid-cols-12">
+                                    <div class="col-span-6">
+                                        <img src="../img/6168f4fca9fb281eed225503_Testimonial Image.png" class="">
+                                    </div>
+                                    <div class="md:px-9 col-span-6 mt-4 md:mt-0">
+                                        <img src="../img/6168f4fca9fb2877ce225501_Quote Right.svg" alt="">
+                                        <h3 class="md:text-3xl text-2xl font-normal text-h1Color lg:my-10 my-4">Amet
+                                            minim mollit
+                                            non
+                                            deserunt est sit aliqua dolor do amet sint officia consequat duis enim
+                                            mollit exercitation.</h3>
+                                        <img src="../img/6168f4fca9fb2883b0225502_Quote Left.svg" alt="">
+                                        <h4 class="text-lg text-h1Color mt-6">Lee Morgan, Slack, Inc</h4>
+                                        <h5 class="text-lightGray">New York, NY Team</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reveal ">
+        <div class="container relative">
+            <div class="grid grid-rows-1 lg:grid-cols-12 items-center mt-40 md:mt-52 lg:p-20 p-10 py-28 bg-btnColor">
+                <div class="col-span-4">
+                    <div>
+                        <h2 class="text-white text-5xl  md:text-6xl  font-bold">Let's build something <span
+                                class="text-greatColor">great!</span>
+                            <h2>
+                    </div>
+                </div>
+                <div class="col-span-8 mt-10 lg:mt-0">
+                    <div>
+                        <p class="text-white text-lg lg:w-96">Amet minim mollit non deserunt est sit aliqua dolor do
+                            amet
+                            sint officia
+                            consequat duis enim
+                            mollit exercitation.</p>
+                        <button
+                            class="mt-10 px-3 py-1 border border-solid text-white border-white transition-500 flex items-center">Our
+                            Company<span><img src="../img/6168f4fca9fb28083b225506_Arrow Project.svg" class="ml-1
+                                w-8"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/6168f4fca9fb282d012254fa_CTA Star.svg" class="absolute top-0 right-0">
+        </div>
+    </section>
+
+
+    <section class="reveal">
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-small">
+                    <div class="flex flex-col md:flex-row md:items-center items-start justify-between mt-52">
+                        <div class="max-w-lg relative">
+                            <h2 class="text-h1Color mb-6 text-5xl font-medium z-10">Blog & Articles
+                            </h2>
+                            <img src="../img/6168f4fca9fb28e1672254da_Star Hero.svg"
+                                class="absolute top-0 -translate-x-14 -translate-y-10 -z-10">
+                        </div>
+                        <div>
+                            <button
+                                class="px-3 py-1 border border-solid border-gray-800 hover:bg-btnHover2 hover:border-white transition-500 text-linkCOlor flex items-center">Featured
+                                Project<span><img src="../img/6168f4fca9fb2818ca2254ee_Arrow Right.svg" class="ml-3
+                                    w-8"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center  md:justify-between mt-14 flex-wrap">
+                <div class="border border-solid border-gray-300 p-5 lg:w-96 w-80 cursor-pointer card--blog">
+                    <div class="overflow-hidden">
+                        <img src="../img/6168f4fca9fb2859c9225545_Blog Post Figma.png" class="card--blog__img">
+                    </div>
+                    <h4 class="text-h1Color font-medium my-5">MARKETING</h4>
+                    <h3 class="text-2xl font-medium text-h1Color">Why Figma works best for modern teams</h3>
+                    <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span class="arrow-right-black"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </h5>
+                </div>
+
+                <div
+                    class="border border-solid border-gray-300 p-5 lg:w-96 w-80 cursor-pointer card--blog mt-10 md:mt-0">
+                    <div class="overflow-hidden">
+                        <img src="../img/6168f4fca9fb28badc225544_Blog Post Design.png" class="card--blog__img">
+                    </div>
+                    <h4 class="text-h1Color font-medium my-5">MARKETING</h4>
+                    <h3 class="text-2xl font-medium text-h1Color">Why Figma works best for modern teams</h3>
+                    <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span class="arrow-right-black"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </h5>
+                </div>
+
+                <div
+                    class="border border-solid border-gray-300 p-5 lg:w-96 w-80 cursor-pointer card--blog mt-10 lg:mt-0 ">
+                    <div class="overflow-hidden">
+                        <img src="../img/6168f4fca9fb2848102254e5_Blog Thumbnail.png" class="card--blog__img">
+                    </div>
+                    <h4 class="text-h1Color font-medium my-5">MARKETING</h4>
+                    <h3 class="text-2xl font-medium text-h1Color">Why Figma works best for modern teams</h3>
+                    <h5 class="text-base mt-5 flex items-center cursor-pointer card__heading2">
+                        Learn More <span class="arrow-right-black"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.129 11.25L11.106 7.227L12.1665 6.1665L18 12L12.1665 17.8335L11.106 16.773L15.129 12.75H6V11.25H15.129Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <div class="flex flex-col md:flex-row justify-between items-center  mt-40 md:mt-52">
+                    <div class="flex flex-row items-center">
+                        <img src="../img/6168f4fca9fb28170e2254d2_Logo.svg" alt="">
+                        <h4 class="text-2xl ml-4 text-logocolor font-bold">Willow</h4>
+                    </div>
+                    <ul class="flex items-center flex-wrap justify-center mt-10 md:mt-0">
+                        <li class=""><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Home</a></li>
+                        <li class="ml-3"><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Company</a></li>
+                        <li class="ml-3"><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Services</a></li>
+                        <li class="ml-3 mt-5 md:mt-0"><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Service Details</a></li>
+                        <li class="ml-3 mt-5 md:mt-0"><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-footerBg py-7 mt-10">
+        <div class="container">
+            <div class="wrapper">
+                <div class="flex lg:flex-row items-center flex-col lg:justify-between ">
+                    <div>
+                        <p class="text-sm text-logocolor">© Template by <a href="#" class="text-btnColor">Flowbase</a> -
+                            Powered by <a href="#" class="text-btnColor">Webflow</a></p>
+                    </div>
+                    <ul class="flex flex-col md:flex-row mt-8 lg:mt-0">
+                        <li><a class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Style Guide</a></li>
+                        <li class="md:ml-10 mt-6 md:mt-0"><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Licence</a></li>
+                        <li class="md:ml-10 mt-6 md:mt-0"><a
+                                class="text-linkCOlor font-normal text-sm hover:border-gray-300 border-transparent border p-3"
+                                href="#">Changelog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

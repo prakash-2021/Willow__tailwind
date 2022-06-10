@@ -1,0 +1,267 @@
+.mr-17 {
+  margin-right: 17%;
+}
+
+.right-15 {
+  right: -15%;
+}
+
+.h-102 {
+  height: 44em;
+}
+
+.drop-down-icon::after {
+  content: "\e603";
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.wrapper-small {
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+.wrapper-xs {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.transition-500 {
+  transition: .5s;
+}
+
+.transition-300 {
+  transition: .3s;
+}
+
+.translate-x-half {
+  transform: translateX(33em) translateY(-2.5em);
+  transform: translateX(22em) translateY(-2.5em);
+}
+
+.card__sun {
+  animation: MoveUpDown 1.7s linear infinite;
+}
+
+
+@keyframes MoveUpDown {
+
+  0%,
+  100% {
+    bottom: 40px;
+  }
+
+  50% {
+    bottom: 60px;
+  }
+}
+
+.heading__two__width {
+  max-width: 28em;
+}
+
+.card__branding:hover .card__heading,
+.card__branding:hover .card__heading2,
+.card__branding:hover .card__description {
+  color: white;
+}
+
+.card__branding .arrow-right {
+  transition: .4s;
+  margin-left: 5px;
+}
+
+.card__branding:hover .arrow-right {
+  margin-left: 10px;
+}
+
+.card__branding:hover .arrow-right path {
+  fill: white;
+}
+
+.card__branding .star__half {
+  transition: .7s;
+  top: -30%;
+  right: -30%;
+}
+
+.card__branding:hover .star__half {
+  top: 0;
+  right: 0;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  background-color: #1c3f3a;
+}
+
+.card--project:hover .overlay {
+  opacity: 1;
+  background-color: #1c3f3ad7;
+}
+
+.card--project .card__img {
+  transition: 2s;
+}
+
+.card--project:hover .card__img {
+  transform: scale(1.2);
+}
+
+.card--project .card__star__img {
+  transition: 1s;
+}
+
+.card--project:hover .card__star__img {
+  transform: rotate(180deg);
+}
+
+.card--project:hover .card--project img,
+.card--project h3,
+.card--project p,
+.card--project h5 {
+  opacity: 1;
+}
+
+.card__heading2 .arrow-right-black {
+  transition: .5s;
+}
+
+.card__heading2:hover .arrow-right-black {
+  margin-left: 15px;
+}
+
+
+
+.swiper-pagination-bullet:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: #f1f3f3;
+  border-radius: 0%;
+  background-image: url(../img/6168f4fca9fb28d121225504_Slider\ Arrow\ Right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-pagination-bullet:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: #f1f3f3;
+  border-radius: 0%;
+  background-image: url(../img/6168f4fca9fb28473e225505_Slider\ Arrow\ Left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-pagination {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.card--blog__img {
+  transition: 1s;
+}
+
+.card--blog:hover .card--blog__img {
+  transform: scale(1.1);
+}
+
+
+.reveal {
+  position: relative;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: all .8s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .w-80vw {
+    width: 90vw;
+  }
+
+  #navMenu {
+    display: none;
+  }
+
+  .hamMenu {
+    background: rgb(209 213 219);
+  }
+
+  .hamMenu:focus-visible {
+    background: rgb(141, 135, 135);
+  }
+
+  .translate-x-half {
+    transform: translateX(22em) translateY(-2.5em);
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 30%;
+    width: 100%;
+  }
+
+  .squiggle {
+    right: 8%;
+    top: 180px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .container {
+    max-width: 330px;
+  }
+
+  .card__sun {
+    animation: MoveUpDown 1.7s linear infinite;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0px;
+    left: 10%;
+    width: 100%;
+  }
+
+  .translate-x-half {
+    transform: translateX(7em) translateY(-2.5em);
+  }
+
+  .h-102 {
+    height: 25em;
+  }
+}
