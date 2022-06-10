@@ -38,8 +38,7 @@
 }
 
 .translate-x-half {
-  transform: translateX(33em) translateY(-2.5em);
-  transform: translateX(22em) translateY(-2.5em);
+  transform: translateX(38em) translateY(-2.5em);
 }
 
 .card__sun {
