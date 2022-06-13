@@ -110,6 +110,17 @@
 
     .card--blog__fig {
         @apply overflow-hidden;
+        position: relative;
+        padding-top: 75%;
+    }
+
+    .card--blog__img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
     }
 
     .card--blog__heading {
