@@ -1,3 +1,134 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+    /* card branding */
+
+    .card--branding {
+        @apply relative overflow-hidden p-10 max-w-md border border-solid border-gray-300 cursor-pointer;
+    }
+
+    .card--branding:hover {
+        @apply bg-linkCOlor;
+    }
+
+    .card--branding__heading {
+        @apply text-2xl font-bold text-h1Color mb-4;
+    }
+
+    .card--branding__description {
+        @apply text-logocolor font-light;
+    }
+
+    .card__btn {
+        @apply text-base mt-8 flex items-center cursor-pointer;
+    }
+
+
+    /* card project */
+
+    .card--project {
+        @apply cursor-pointer relative overflow-hidden;
+    }
+
+    .card--project__star__img {
+        @apply w-12;
+    }
+
+    .card__heading {
+        @apply text-4xl font-semibold text-white mt-20 mb-5;
+    }
+
+    @screen lg {
+        .card__heading {
+            @apply mt-80;
+        }
+    }
+
+    .card__description {
+        @apply text-white font-light;
+    }
+
+    .card--project__btn {
+        @apply text-base text-white mt-6 flex items-center cursor-pointer;
+    }
+
+    .card--prject__arrow {
+        @apply ml-2 duration-300;
+    }
+
+    .card--project:hover .card--prject__arrow {
+        @apply ml-4;
+    }
+
+
+
+
+    /* card award */
+
+    .card--award {
+        @apply border border-solid border-gray-300 p-8;
+    }
+
+    .card--award__img {
+        @apply border-b border-gray-300 my-8 pb-8;
+    }
+
+    .card--award__texts {
+        @apply border-b border-gray-300 my-7 pb-8;
+    }
+
+    .card--award__heading {
+        @apply text-lightGray;
+    }
+
+    .card--award__description {
+        @apply text-2xl font-medium text-h1Color mt-3;
+    }
+
+    .card--award__btn {
+        @apply text-base mt-5 flex items-center cursor-pointer;
+    }
+
+    .card-award__arrow {
+        @apply ml-2 duration-300;
+    }
+
+    .card--award__btn:hover .card-award__arrow {
+        @apply ml-4;
+    }
+
+
+    /* card blog */
+
+    .card--blog {
+        @apply border border-solid border-gray-300 p-5 cursor-pointer;
+    }
+
+    .card--blog__fig {
+        @apply overflow-hidden;
+    }
+
+    .card--blog__heading {
+        @apply text-h1Color font-medium my-5;
+    }
+
+    .card--blog__description {
+        @apply text-2xl font-medium text-h1Color;
+    }
+
+    .card--blog__btn {
+        @apply text-base mt-5 flex items-center cursor-pointer;
+    }
+
+    .card--blog__btn .arrow-right-black{
+        @apply duration-300 ml-2;
+    }
+
+    .card--blog__btn:hover .arrow-right-black{
+        @apply ml-4;
+    }
+}
